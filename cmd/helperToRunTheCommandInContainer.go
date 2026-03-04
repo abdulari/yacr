@@ -17,9 +17,9 @@ var helperToRunTheCommandInContainerCmd = &cobra.Command{
 	Use:    "helperToRunTheCommandInContainer",
 	Hidden: true,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Printf("running %v as PID %d \n", args[1], os.Getpid())
+		// fmt.Printf("running %v as PID %d \n", args[1], os.Getpid())
 		id := args[0]
-		fmt.Println("container id = " + id)
+		// fmt.Println("container id = " + id)
 		terminal := exec.Command(args[1], args[2:]...)
 		terminal.Stdin = cmd.InOrStdin()
 		terminal.Stdout = cmd.OutOrStdout()
@@ -34,8 +34,8 @@ var helperToRunTheCommandInContainerCmd = &cobra.Command{
 
 		fmt.Println("## closing container")
 
-		// cmdUnmountContainer := "umount /tmp/yacr/runs/" + id + "/merged"
-		// must(exec.Command("sh", "-c", cmdUnmountContainer).Run())
+		// we changed the root. so  must be relative to the latest root.
+		must(syscall.Unmount("proc", 0))
 		must(syscall.Chroot("/"))
 		must(os.Chdir("/"))
 		// must(syscall.Unmount("/tmp/yacr/runs/"+id+"/merged", 0))

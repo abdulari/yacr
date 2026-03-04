@@ -66,7 +66,7 @@ var runCmd = &cobra.Command{
 		// cmdlineToRun := append([]string{"helperToRunTheCommandInContainer"}, args...)
 		cmdlineToRun := append([]string{"helperToRunTheCommandInContainer"}, id)
 		cmdlineToRun = append(cmdlineToRun, args...)
-		fmt.Printf("cmdlineToRun: %v\n", cmdlineToRun)
+		// fmt.Printf("cmdlineToRun: %v\n", cmdlineToRun)
 		terminal := exec.Command("/proc/self/exe", cmdlineToRun...)
 		terminal.Stdin = cmd.InOrStdin()
 		terminal.Stdout = cmd.OutOrStdout()
@@ -79,6 +79,11 @@ var runCmd = &cobra.Command{
 		}
 
 		terminal.Run()
+
+		// cleaning up
+		cmdUnmountContainer := "/tmp/yacr/runs/" + id + "/merged"
+		must(exec.Command("umount", cmdUnmountContainer).Run())
+		must(os.RemoveAll("/tmp/yacr/runs/" + id))
 	},
 }
 

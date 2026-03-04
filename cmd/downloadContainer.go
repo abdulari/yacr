@@ -29,6 +29,7 @@ var downloadContainerCmd = &cobra.Command{
 			fmt.Println("skopeo is not installed, please install it to use this command")
 			os.Exit(1)
 		}
+		must(os.MkdirAll(pathToContainerFolder, 0755))
 		imageURL := args[0]
 		imageName := strings.Split(imageURL, "/")
 		folderName := strings.Replace(imageName[len(imageName)-1], ":", "__", 1)
