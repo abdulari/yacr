@@ -4,7 +4,6 @@ Copyright © 2026 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
-	"fmt"
 	"os"
 	"os/exec"
 	"syscall"
@@ -31,8 +30,6 @@ var helperToRunTheCommandInContainerCmd = &cobra.Command{
 		must(syscall.Mount("proc", "proc", "proc", 0, ""))
 
 		terminal.Run()
-
-		fmt.Println("## closing container")
 
 		// we changed the root. so  must be relative to the latest root.
 		must(syscall.Unmount("proc", 0))
