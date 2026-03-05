@@ -19,6 +19,7 @@ var helperToRunTheCommandInContainerCmd = &cobra.Command{
 		// fmt.Printf("running %v as PID %d \n", args[1], os.Getpid())
 		id := args[0]
 		// fmt.Println("container id = " + id)
+		must(exec.Command("hostname", id).Run())
 		terminal := exec.Command(args[1], args[2:]...)
 		terminal.Stdin = cmd.InOrStdin()
 		terminal.Stdout = cmd.OutOrStdout()
