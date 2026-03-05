@@ -18,6 +18,8 @@ sudo apt install skopeo jq
 
 ```
 git clone https://github.com/abdulari/yacr
+cd yacr
+go build
 ```
 
 
