@@ -1,0 +1,263 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3" pages="2">
+  <diagram name="download-container" id="0qSsoNkj0jt8Vap_xJDP">
+    <mxGraphModel dx="815" dy="481" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_HqlfQ7m0UdTpu7z8eWe-2" value="yacr" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="40" y="230" width="100" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="_HqlfQ7m0UdTpu7z8eWe-4" value="skopeo" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="280" y="230" width="100" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="_HqlfQ7m0UdTpu7z8eWe-9" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="_HqlfQ7m0UdTpu7z8eWe-4">
+          <mxGeometry x="45" y="210" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_HqlfQ7m0UdTpu7z8eWe-10" value="store container in&lt;div&gt;/tmp/yacr/containers&lt;/div&gt;&lt;div&gt;as tarball&lt;/div&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="_HqlfQ7m0UdTpu7z8eWe-9" parent="_HqlfQ7m0UdTpu7z8eWe-4" source="_HqlfQ7m0UdTpu7z8eWe-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="220" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="50" y="190" />
+              <mxPoint x="80" y="190" />
+              <mxPoint x="80" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_HqlfQ7m0UdTpu7z8eWe-5" value="request to download container&lt;div&gt;&amp;amp;&lt;/div&gt;&lt;div&gt;store it in /tmp/yacr/containers&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="89.92857142857144" y="330" as="sourcePoint" />
+            <mxPoint x="329.5" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_HqlfQ7m0UdTpu7z8eWe-6" value="dockerhub" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="450" y="230" width="100" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="_HqlfQ7m0UdTpu7z8eWe-7" value="request container" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="330" y="350" as="sourcePoint" />
+            <mxPoint x="499.5" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_HqlfQ7m0UdTpu7z8eWe-8" value="return container" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="499.5" y="390" as="sourcePoint" />
+            <mxPoint x="330" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_HqlfQ7m0UdTpu7z8eWe-12" value="&amp;nbsp;download container complete" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="329.5" y="500" as="sourcePoint" />
+            <mxPoint x="89.92857142857144" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="jfma2X5bz_aRgtL7LpLm" name="run-container">
+    <mxGraphModel dx="1188" dy="701" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uzqr4piXM63oljJokvM1-3" value="yacr" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="190" y="140" width="100" height="1050" as="geometry" />
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-3" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="uzqr4piXM63oljJokvM1-3">
+          <mxGeometry x="45" y="90" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-4" value="generate uuid&lt;div&gt;and create folder&lt;/div&gt;&lt;div&gt;in /tmp/yacr/runs&lt;/div&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="vltVdnSTu89GDmU0eY1i-3" parent="uzqr4piXM63oljJokvM1-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="70" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="80" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-10" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="uzqr4piXM63oljJokvM1-3">
+          <mxGeometry x="45" y="180" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-11" value="create folders in runs&lt;div&gt;./blob, ./upper, ./merged&lt;/div&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="vltVdnSTu89GDmU0eY1i-10" parent="uzqr4piXM63oljJokvM1-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="160" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="80" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-1" value="tar" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="390" y="140" width="100" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-2" value="fork terminal" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="520" y="140" width="100" height="980" as="geometry" />
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-23" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="vltVdnSTu89GDmU0eY1i-2">
+          <mxGeometry x="50" y="430" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-24" value="set hostname&lt;div&gt;to container&lt;/div&gt;&lt;div&gt;UUID&lt;/div&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="vltVdnSTu89GDmU0eY1i-23" parent="vltVdnSTu89GDmU0eY1i-2" source="vltVdnSTu89GDmU0eY1i-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="410" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="110" y="410" />
+              <mxPoint x="110" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-30" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="vltVdnSTu89GDmU0eY1i-2">
+          <mxGeometry x="45" y="560" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-31" value="chdir /&lt;div&gt;because we&amp;nbsp;&lt;/div&gt;&lt;div&gt;already in different&lt;/div&gt;&lt;div&gt;root&lt;/div&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="vltVdnSTu89GDmU0eY1i-30" parent="vltVdnSTu89GDmU0eY1i-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="540" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="80" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-44" value="chdir /&lt;div&gt;because we&amp;nbsp;&lt;/div&gt;&lt;div&gt;already in different&lt;/div&gt;&lt;div&gt;root&lt;/div&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="vltVdnSTu89GDmU0eY1i-45" parent="vltVdnSTu89GDmU0eY1i-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="890" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="80" y="920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-45" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="vltVdnSTu89GDmU0eY1i-2">
+          <mxGeometry x="45" y="910" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-12" value="extract container tarball&amp;nbsp;&lt;div&gt;in ./blob folder&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.0008" width="80" relative="1" as="geometry">
+            <mxPoint x="240.0022222222224" y="390" as="sourcePoint" />
+            <mxPoint x="439.27999999999986" y="390" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-13" value="extract complete" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="439.27999999999986" y="420" as="sourcePoint" />
+            <mxPoint x="240.0022222222224" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-14" value="Linux Kernel" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
+          <mxGeometry y="140" width="100" height="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-15" value="syscall.mount&lt;div&gt;overlay&lt;/div&gt;&lt;div&gt;lowerdir=./blob/*&lt;/div&gt;&lt;div&gt;upperdir=./upper&lt;/div&gt;&lt;div&gt;./merged&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" target="vltVdnSTu89GDmU0eY1i-14">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="239.57" y="470" as="sourcePoint" />
+            <mxPoint x="69.99857142857132" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-16" value="overlay mount complete" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="49.928571428571445" y="495" as="sourcePoint" />
+            <mxPoint x="239.5" y="495" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-17" value="&lt;div&gt;(blocking)&lt;/div&gt;fork yacr terminal process with&amp;nbsp;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;SysProcAttr:&lt;/span&gt;&lt;div&gt;syscall.CLONE_NEWUTS&lt;/div&gt;&lt;div&gt;syscall.CLONE_NEWPID&lt;/div&gt;&lt;div&gt;syscall.CLONE_NEWNS&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="240" y="529" as="sourcePoint" />
+            <mxPoint x="569.5" y="529" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-21" value="fork yacr terminal closed" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.0014" relative="1" as="geometry">
+            <mxPoint x="569.5" y="1120" as="sourcePoint" />
+            <mxPoint x="240" y="1120" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-22" value="Container" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="670" y="140" width="100" height="740" as="geometry" />
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-36" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="vltVdnSTu89GDmU0eY1i-22">
+          <mxGeometry x="45" y="680" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-37" value="echo &quot;hello world&quot;&amp;nbsp;&lt;div&gt;&amp;amp;&amp;amp; exit&lt;/div&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="vltVdnSTu89GDmU0eY1i-36" parent="vltVdnSTu89GDmU0eY1i-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="680" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="50" y="670" />
+              <mxPoint x="75" y="670" />
+              <mxPoint x="75" y="710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-27" value="change terminal root&amp;nbsp;&lt;div&gt;to container folder&lt;div&gt;syscall.chroot ./merged&lt;/div&gt;&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" target="vltVdnSTu89GDmU0eY1i-14">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="569.69" y="629.71" as="sourcePoint" />
+            <mxPoint x="60" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-28" value="chroot terminal complete" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50.00034482758605" y="660" as="sourcePoint" />
+            <mxPoint x="570" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-29" value="syscall.mount /proc" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="vltVdnSTu89GDmU0eY1i-2">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="549.5" y="760" as="sourcePoint" />
+            <mxPoint x="50" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-32" value="/proc mount complete" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" target="vltVdnSTu89GDmU0eY1i-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="780" as="sourcePoint" />
+            <mxPoint x="549.69" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-33" value="&lt;div&gt;launch container&lt;/div&gt;interactive terminal" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="vltVdnSTu89GDmU0eY1i-2">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="580" y="800" as="sourcePoint" />
+            <mxPoint x="719.5" y="798.71" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-35" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="780" y="740" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-38" value="exit container" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=0.5;entryY=0.755;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="vltVdnSTu89GDmU0eY1i-2">
+          <mxGeometry x="0.0018" relative="1" as="geometry">
+            <mxPoint x="719.5" y="880" as="sourcePoint" />
+            <mxPoint x="549.810344827586" y="880" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-39" value="syscall.unmount /proc" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="569.57" y="900" as="sourcePoint" />
+            <mxPoint x="50" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-40" value="/proc unmount complete" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.0006" relative="1" as="geometry">
+            <mxPoint x="50" y="923" as="sourcePoint" />
+            <mxPoint x="569.69" y="923" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-41" value="change terminal root&amp;nbsp;&lt;div&gt;to host root&lt;div&gt;syscall.chroot /&lt;/div&gt;&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="569.69" y="980" as="sourcePoint" />
+            <mxPoint x="50" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-42" value="chroot terminal complete" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50.00034482758605" y="1010" as="sourcePoint" />
+            <mxPoint x="570" y="1010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-46" value="unmount complete" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="49.998571428571445" y="1165" as="sourcePoint" />
+            <mxPoint x="239.57" y="1165" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vltVdnSTu89GDmU0eY1i-47" value="syscall.unmount&amp;nbsp;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;./merged&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="239.64" y="1140" as="sourcePoint" />
+            <mxPoint x="50.07" y="1140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
