@@ -37,7 +37,13 @@ yacr run docker.io/library/alpine:latest [command]
 # optional command to run
 ```
 
-3. destroy container
-```
-yacr start docker.io/library/alpine:latest
-```
+3. delete container
+just delete the folder in /tmp/yacr/runs
+
+
+
+## how it works - downloading container
+![](images/yacr-download-container.drawio.png)
+
+## how it works - running container
+![](images/yacr-run-container.drawio.png)
