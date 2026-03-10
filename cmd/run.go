@@ -130,8 +130,12 @@ var runCmd = &cobra.Command{
 			cmdlineToRun = append(cmdlineToRun, string(configCmd))
 		}
 
+		// export TERM=xterm-256color
+		allEnv := strings.Split(string(configEnv), "\n")
+		allEnv = append(allEnv, "TERM=xterm-256color")
+
 		terminal := exec.Command("/proc/self/exe", cmdlineToRun...)
-		terminal.Env = strings.Split(string(configEnv), "\n")
+		terminal.Env = allEnv
 		terminal.Stdin = cmd.InOrStdin()
 		terminal.Stdout = cmd.OutOrStdout()
 		terminal.Stderr = cmd.ErrOrStderr()
